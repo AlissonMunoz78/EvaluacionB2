@@ -2,9 +2,13 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            Login login = new Login();
-            login.setVisible(true);
-        });
+        Login loginForm = new Login();
+
+        JFrame frame = new JFrame("Sistema de Gestión de Productos");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+        frame.pack();
+        frame.setVisible(true);
     }
 }
